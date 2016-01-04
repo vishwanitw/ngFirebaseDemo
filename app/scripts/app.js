@@ -31,6 +31,11 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/addRecord', {
+        templateUrl: 'views/add.html',
+        controller: 'AddRecordCtrl',
+        controllerAs: 'AddRecordCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
