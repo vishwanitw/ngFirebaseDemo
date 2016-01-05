@@ -14,7 +14,11 @@ angular.module('nodeMongoResearchApp')
 	  $scope.details = $firebaseArray(ref);
 		  $scope.addMessage = function() {
 		    $scope.details.$add({
-		      name: $scope.newDetailsText
+		      name: $scope.newDetailsName,
+		      email : $scope.newDetailsEmail,
+		      address : $scope.newDetailsAdress
 		    });
 		  };
+
+		  // $scope.details = '';
   }]);    
