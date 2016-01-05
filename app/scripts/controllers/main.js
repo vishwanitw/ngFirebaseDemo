@@ -8,10 +8,9 @@
  * Controller of the nodeMongoResearchApp
  */
 angular.module('nodeMongoResearchApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('MainCtrl',['$scope', function ($scope) {
+
+    $scope.addRecords = function (){
+	    	console.log("insdie add");
+	    }
+  }]);

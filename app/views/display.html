@@ -1,0 +1,8 @@
+<ul>
+      <li ng-repeat="detail in details">
+        <!-- edit a message -->
+        <input ng-model="detail.name" ng-change="details.$save(message)" />
+        <!-- delete a message -->
+        <button ng-click="details.$remove(details)">Delete Message</button>
+      </li>
+</ul>

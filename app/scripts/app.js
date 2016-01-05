@@ -17,7 +17,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'firebase'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -35,6 +36,11 @@ angular
         templateUrl: 'views/add.html',
         controller: 'AddRecordCtrl',
         controllerAs: 'AddRecordCtrl'
+      })
+      .when('/display', {
+        templateUrl: 'views/display.html',
+        controller: 'DisplayCtrl',
+        controllerAs: 'DisplayCtrl'
       })
       .otherwise({
         redirectTo: '/'
