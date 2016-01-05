@@ -19,6 +19,7 @@ angular
     'ngSanitize',
     'ngTouch',
     'firebase'
+    
   ])
   .config(function ($routeProvider) {
     $routeProvider
