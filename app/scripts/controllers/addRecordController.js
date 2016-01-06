@@ -18,6 +18,9 @@ angular.module('nodeMongoResearchApp')
 		      email : $scope.newDetailsEmail,
 		      address : $scope.newDetailsAdress
 		    });
+		    $scope.newDetailsName = '' ;
+		  	$scope.newDetailsEmail = '';
+		  	$scope.newDetailsAdress = '';
 		  };
 
 		  // $scope.details = '';
